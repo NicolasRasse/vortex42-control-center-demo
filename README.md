@@ -10,6 +10,10 @@ Esta versión fue creada específicamente para mostrar el proyecto sin exponer i
 
 > Todos los estados, métricas, porcentajes y tiempos mostrados son datos simulados.
 
+## Vista previa
+
+![Vortex42 Control Center](vortex42-dashboard.jpg)
+
 ## Secciones
 
 ### COMMAND
