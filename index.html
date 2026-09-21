@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Demo pública del Vortex42 Homelab Control Center."
+  >
+
+  <title>Vortex42 Control Center · Demo</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       TOPBAR
+       ===================================================== -->
+
+  <header class="topbar">
+
+    <div class="system-stats">
+
+      <div class="stat">
+        <span class="stat-icon">⚙</span>
+
+        <span class="stat-value">
+          12%
+        </span>
+
+        <span class="stat-label">
+          CPU
+        </span>
+      </div>
+
+
+      <div class="stat">
+        <span class="stat-icon">▤</span>
+
+        <span class="stat-value">
+          4.9 GiB
+        </span>
+
+        <span class="stat-label">
+          Libre
+        </span>
+      </div>
+
+
+      <div class="stat">
+        <span class="stat-icon">▰</span>
+
+        <span class="stat-value">
+          198 GB
+        </span>
+
+        <span class="stat-label">
+          Libre
+        </span>
+      </div>
+
+    </div>
+
+
+    <div class="topbar-center">
+
+      <div
+        id="current-date"
+        class="current-date"
+      >
+        Vortex42 Control Center
+      </div>
+
+    </div>
+
+
+    <div class="topbar-search">
+
+      <input
+        id="global-search"
+        type="search"
+        placeholder="Buscar..."
+        autocomplete="off"
+        aria-label="Buscar servicios"
+      >
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       DEMO BANNER
+       ===================================================== -->
+
+  <section class="demo-banner">
+
+    <div>
+
+      <h1>
+        VORTEX42 CONTROL CENTER
+      </h1>
+
+      <p>
+        Demo pública interactiva del dashboard del homelab.
+      </p>
+
+    </div>
+
+
+    <span class="demo-badge">
+      DEMO · DATOS SIMULADOS
+    </span>
+
+  </section>
+
+
+  <!-- =====================================================
+       TABS
+       ===================================================== -->
+
+  <nav
+    class="tabs"
+    aria-label="Secciones principales"
+  >
+
+    <button
+      class="tab-button active"
+      data-tab="command"
+      type="button"
+    >
+      COMMAND
+    </button>
+
+
+    <button
+      class="tab-button"
+      data-tab="services"
+      type="button"
+    >
+      SERVICIOS
+    </button>
+
+
+    <button
+      class="tab-button"
+      data-tab="toolbox"
+      type="button"
+    >
+      TOOLBOX
+    </button>
+
+
+    <button
+      class="tab-button"
+      data-tab="admin"
+      type="button"
+    >
+      ADMIN
+    </button>
+
+  </nav>
+
+
+  <!-- =====================================================
+       DASHBOARD
+       ===================================================== -->
+
+  <main class="dashboard">
+
+
+    <!-- ===================================================
+         COMMAND
+         =================================================== -->
+
+    <section
+      id="command"
+      class="tab-panel active"
+    >
+
+
+      <!-- ===============================================
+           NODOS
+           =============================================== -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          NODOS
+        </h2>
+
+
+        <div class="grid grid-3">
+
+
+          <!-- SERVER -->
+
+          <article
+            class="card node-card searchable"
+            data-search="vortex42-server servidor principal cpu memoria disco"
+          >
+
+            <div class="card-header">
+
+              <div class="card-title">
+
+                <span class="card-icon">
+                  ▣
+                </span>
+
+                <div>
+
+                  <h3>
+                    vortex42-server
+                  </h3>
+
+                  <p>
+                    Servidor principal
+                  </p>
+
+                </div>
+
+              </div>
+
+              <span class="status-dot real"></span>
+
+            </div>
+
+
+            <div class="metrics">
+
+              <div>
+                <strong>
+                  Activo
+                </strong>
+
+                <span>
+                  ESTADO
+                </span>
+              </div>
+
+
+              <div>
+                <strong>
+                  12%
+                </strong>
+
+                <span>
+                  CPU
+                </span>
+              </div>
+
+
+              <div>
+                <strong>
+                  42%
+                </strong>
+
+                <span>
+                  MEM
+                </span>
+              </div>
+
+
+              <div>
+                <strong>
+                  18%
+                </strong>
+
+                <span>
+                  DISCO
+                </span>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- PI5 -->
+
+          <article
+            class="card node-card searchable"
+            data-search="pi5-nube raspberry pi immich nube"
+          >
+
+            <div class="card-header">
+
+              <div class="card-title">
+
+                <span class="card-icon">
+                  ▤
+                </span>
+
+                <div>
+
+                  <h3>
+                    pi5-nube
+                  </h3>
+
+                  <p>
+                    Nube · Immich
+                  </p>
+
+                </div>
+
+              </div>
+
+              <span class="status-dot real"></span>
+
+            </div>
+
+
+            <div class="metrics">
+
+              <div>
+                <strong>
+                  Activo
+                </strong>
+
+                <span>
+                  ESTADO
+                </span>
+              </div>
+
+
+              <div>
+                <strong>
+                  7%
+                </strong>
+
+                <span>
+                  CPU
+                </span>
+              </div>
+
+
+              <div>
+                <strong>
+                  38%
+                </strong>
+
+                <span>
+                  MEM
+                </span>
+              </div>
+
+
+              <div>
+                <strong>
+                  23%
+                </strong>
+
+                <span>
+                  DISCO
+                </span>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- PI3 -->
+
+          <article
+            class="card node-card searchable"
+            data-search="pi3-red raspberry pi pihole dns red"
+          >
+
+            <div class="card-header">
+
+              <div class="card-title">
+
+                <span class="card-icon">
+                  ▤
+                </span>
+
+                <div>
+
+                  <h3>
+                    pi3-red
+                  </h3>
+
+                  <p>
+                    Red · Pi-hole
+                  </p>
+
+                </div>
+
+              </div>
+
+              <span class="status-dot real"></span>
+
+            </div>
+
+
+            <div class="metrics">
+
+              <div>
+                <strong>
+                  Activo
+                </strong>
+
+                <span>
+                  ESTADO
+                </span>
+              </div>
+
+
+              <div>
+                <strong>
+                  5%
+                </strong>
+
+                <span>
+                  CPU
+                </span>
+              </div>
+
+
+              <div>
+                <strong>
+                  35%
+                </strong>
+
+                <span>
+                  MEM
+                </span>
+              </div>
+
+
+              <div>
+                <strong>
+                  15%
+                </strong>
+
+                <span>
+                  DISCO
+                </span>
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ===============================================
+           MANTENIMIENTO
+           =============================================== -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          MANTENIMIENTO
+        </h2>
+
+
+        <div class="grid grid-2">
+
+
+          <!-- APT -->
+
+          <article
+            class="card maintenance-card searchable"
+            data-search="actualizaciones apt update debian raspberry"
+          >
+
+            <div class="card-header">
+
+              <div class="card-title">
+
+                <span class="card-icon">
+                  ↑
+                </span>
+
+                <div>
+
+                  <h3>
+                    Actualizaciones APT
+                  </h3>
+
+                  <p>
+                    Estado de actualizaciones del sistema
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="status-list">
+
+              <div>
+                <span>
+                  vortex42-server
+                </span>
+
+                <strong class="status-ok">
+                  AL DÍA
+                </strong>
+              </div>
+
+
+              <div>
+                <span>
+                  pi5-nube
+                </span>
+
+                <strong class="status-ok">
+                  AL DÍA
+                </strong>
+              </div>
+
+
+              <div>
+                <span>
+                  pi3-red
+                </span>
+
+                <strong class="status-ok">
+                  AL DÍA
+                </strong>
+              </div>
+
+
+              <div class="status-muted">
+
+                <span>
+                  Último chequeo
+                </span>
+
+                <strong>
+                  hace 18 minutos
+                </strong>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- BACKUPS -->
+
+          <article
+            class="card maintenance-card searchable"
+            data-search="backups copias seguridad server immich pihole vaultwarden"
+          >
+
+            <div class="card-header">
+
+              <div class="card-title">
+
+                <span class="card-icon">
+                  ⟳
+                </span>
+
+                <div>
+
+                  <h3>
+                    Backups
+                  </h3>
+
+                  <p>
+                    Estado de las copias de seguridad
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="status-list">
+
+              <div>
+
+                <span>
+                  Server
+                </span>
+
+                <strong class="status-ok">
+                  OK · hace 8 horas
+                </strong>
+
+              </div>
+
+
+              <div>
+
+                <span>
+                  Immich
+                </span>
+
+                <strong class="status-ok">
+                  OK · hace 7 horas
+                </strong>
+
+              </div>
+
+
+              <div>
+
+                <span>
+                  Pi-hole
+                </span>
+
+                <strong class="status-ok">
+                  OK · hace 8 horas
+                </strong>
+
+              </div>
+
+
+              <div>
+
+                <span>
+                  Vaultwarden
+                </span>
+
+                <strong class="status-ok">
+                  OK · hace 9 horas
+                </strong>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ===============================================
+           INFRAESTRUCTURA
+           =============================================== -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          INFRAESTRUCTURA
+        </h2>
+
+
+        <div class="grid grid-4">
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="homepage dashboard panel"
+          >
+
+            <div class="card-title">
+
+              <span class="card-icon">
+                ▰
+              </span>
+
+              <div>
+
+                <h3>
+                  Homepage
+                </h3>
+
+                <p>
+                  Panel principal del homelab
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot real"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="portainer docker containers"
+          >
+
+            <div class="card-title">
+
+              <span class="card-icon">
+                P
+              </span>
+
+              <div>
+
+                <h3>
+                  Portainer
+                </h3>
+
+                <p>
+                  Gestión de contenedores Docker
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot real"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="nginx proxy manager https reverse proxy"
+          >
+
+            <div class="card-title">
+
+              <span class="card-icon">
+                ◎
+              </span>
+
+              <div>
+
+                <h3>
+                  Nginx Proxy Manager
+                </h3>
+
+                <p>
+                  Reverse proxy y HTTPS
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot real"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="pi-hole pihole dns publicidad"
+          >
+
+            <div class="card-title">
+
+              <span class="card-icon">
+                ◆
+              </span>
+
+              <div>
+
+                <h3>
+                  Pi-hole
+                </h3>
+
+                <p>
+                  DNS local y bloqueo de publicidad
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot real"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ===============================================
+           OBSERVABILIDAD
+           =============================================== -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          OBSERVABILIDAD
+        </h2>
+
+
+        <div class="grid grid-5">
+
+
+          <!-- UPTIME KUMA -->
+
+          <article
+            class="card compact-card uptime-card searchable"
+            data-search="uptime kuma disponibilidad"
+          >
+
+            <div class="card-title">
+
+              <span class="card-icon">
+                ◉
+              </span>
+
+              <div>
+
+                <h3>
+                  Uptime Kuma
+                </h3>
+
+                <p>
+                  Estado general del homelab
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <span class="status-dot real"></span>
+
+
+            <div class="mini-metrics">
+
+              <span>
+
+                <strong>
+                  16
+                </strong>
+
+                ACTIVOS
+
+              </span>
+
+
+              <span>
+
+                <strong>
+                  0
+                </strong>
+
+                INACTIVOS
+
+              </span>
+
+
+              <span>
+
+                <strong>
+                  100%
+                </strong>
+
+                UPTIME
+
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <!-- BESZEL -->
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="beszel monitorizacion hosts recursos"
+          >
+
+            <div class="card-title">
+
+              <span class="card-icon">
+                B
+              </span>
+
+              <div>
+
+                <h3>
+                  Beszel
+                </h3>
+
+                <p>
+                  Estado de hosts y recursos
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot real"></span>
+
+          </article>
+
+
+          <!-- GLANCES -->
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="glances metricas sistema"
+          >
+
+            <div class="card-title">
+
+              <span class="card-icon">
+                ◔
+              </span>
+
+              <div>
+
+                <h3>
+                  Glances
+                </h3>
+
+                <p>
+                  Métricas en tiempo real
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot real"></span>
+
+          </article>
+
+
+          <!-- DOZZLE -->
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="dozzle logs docker"
+          >
+
+            <div class="card-title">
+
+              <span class="card-icon">
+                ◌
+              </span>
+
+              <div>
+
+                <h3>
+                  Dozzle
+                </h3>
+
+                <p>
+                  Logs Docker en vivo
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot real"></span>
+
+          </article>
+
+
+          <!-- NTFY -->
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="ntfy notificaciones alertas"
+          >
+
+            <div class="card-title">
+
+              <span class="card-icon">
+                &gt;_
+              </span>
+
+              <div>
+
+                <h3>
+                  ntfy
+                </h3>
+
+                <p>
+                  Notificaciones del homelab
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot real"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SERVICIOS
+         =================================================== -->
+
+    <section
+      id="services"
+      class="tab-panel"
+    >
+
+      <section class="dashboard-section">
+
+        <h2>
+          SERVICIOS
+        </h2>
+
+
+        <div class="grid grid-4">
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="immich fotos videos backup"
+          >
+
+            <div class="card-title">
+
+              <span class="service-icon">
+                ✦
+              </span>
+
+              <div>
+
+                <h3>
+                  Immich
+                </h3>
+
+                <p>
+                  Fotos, videos y backups
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="vaultwarden password gestor contraseñas"
+          >
+
+            <div class="card-title">
+
+              <span class="service-icon">
+                V
+              </span>
+
+              <div>
+
+                <h3>
+                  Vaultwarden
+                </h3>
+
+                <p>
+                  Gestor de contraseñas
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="actual budget finanzas"
+          >
+
+            <div class="card-title">
+
+              <span class="service-icon">
+                A
+              </span>
+
+              <div>
+
+                <h3>
+                  Actual Budget
+                </h3>
+
+                <p>
+                  Finanzas personales
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="gitea git repositorio"
+          >
+
+            <div class="card-title">
+
+              <span class="service-icon">
+                G
+              </span>
+
+              <div>
+
+                <h3>
+                  Gitea
+                </h3>
+
+                <p>
+                  Repositorios Git locales
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="file browser archivos"
+          >
+
+            <div class="card-title">
+
+              <span class="service-icon">
+                ▣
+              </span>
+
+              <div>
+
+                <h3>
+                  File Browser
+                </h3>
+
+                <p>
+                  Explorador de archivos web
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         TOOLBOX
+         =================================================== -->
+
+    <section
+      id="toolbox"
+      class="tab-panel"
+    >
+
+
+      <!-- HERRAMIENTAS -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          HERRAMIENTAS
+        </h2>
+
+
+        <div class="grid grid-4">
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="it tools herramientas tecnicas"
+          >
+
+            <div class="card-title">
+
+              <span class="card-icon">
+                ⚙
+              </span>
+
+              <div>
+
+                <h3>
+                  IT Tools
+                </h3>
+
+                <p>
+                  Herramientas técnicas rápidas
+                </p>
+
+              </div>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- RED Y DNS -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          RED Y DNS
+        </h2>
+
+
+        <div class="grid grid-4">
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="mxtoolbox dns mx smtp"
+          >
+
+            <div>
+              <h3>
+                MXToolbox
+              </h3>
+
+              <p>
+                DNS · MX · SMTP · diagnóstico
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="dns checker propagacion"
+          >
+
+            <div>
+              <h3>
+                DNS Checker
+              </h3>
+
+              <p>
+                Propagación DNS global
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="ipinfo ip asn proveedor"
+          >
+
+            <div>
+              <h3>
+                IPinfo
+              </h3>
+
+              <p>
+                IP pública · ASN · proveedor
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="cloudflare speed latencia jitter"
+          >
+
+            <div>
+              <h3>
+                Cloudflare Speed
+              </h3>
+
+              <p>
+                Latencia · jitter · velocidad
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- WEB SSL -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          WEB Y SSL
+        </h2>
+
+
+        <div class="grid grid-3">
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="ssl labs tls certificados"
+          >
+
+            <div>
+              <h3>
+                SSL Labs
+              </h3>
+
+              <p>
+                Auditoría SSL · TLS · certificados
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="security headers seguridad web"
+          >
+
+            <div>
+              <h3>
+                Security Headers
+              </h3>
+
+              <p>
+                Headers HTTP · seguridad web
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="down for everyone disponibilidad"
+          >
+
+            <div>
+              <h3>
+                Down For Everyone
+              </h3>
+
+              <p>
+                Comprobar disponibilidad externa
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- APIS -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          APIS Y DESARROLLO
+        </h2>
+
+
+        <div class="grid grid-4">
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="httpbin http api"
+          >
+
+            <div>
+              <h3>
+                HTTPBin
+              </h3>
+
+              <p>
+                Pruebas HTTP · headers · APIs
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="webhook site api desarrollo"
+          >
+
+            <div>
+              <h3>
+                Webhook.site
+              </h3>
+
+              <p>
+                Capturar · inspeccionar · depurar webhooks
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="regex101 expresiones regulares"
+          >
+
+            <div>
+              <h3>
+                Regex101
+              </h3>
+
+              <p>
+                Crear · probar · depurar expresiones regulares
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="jsonlint json validar"
+          >
+
+            <div>
+              <h3>
+                JSONLint
+              </h3>
+
+              <p>
+                Validar · formatear · reparar JSON
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- SEGURIDAD -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          SEGURIDAD
+        </h2>
+
+
+        <div class="grid grid-2">
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="virustotal seguridad malware"
+          >
+
+            <div>
+              <h3>
+                VirusTotal
+              </h3>
+
+              <p>
+                Analizar URLs · archivos · amenazas
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="urlscan seguridad web"
+          >
+
+            <div>
+              <h3>
+                URLScan
+              </h3>
+
+              <p>
+                Analizar requests · recursos · comportamiento web
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- DIAGNOSTICO -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          DIAGNÓSTICO DE RED
+        </h2>
+
+
+        <div class="grid grid-4">
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="canyouseeme puertos red"
+          >
+
+            <div>
+              <h3>
+                CanYouSeeMe
+              </h3>
+
+              <p>
+                Comprobar puertos públicos abiertos
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="icann lookup dominios whois"
+          >
+
+            <div>
+              <h3>
+                ICANN Lookup
+              </h3>
+
+              <p>
+                Dominios · IP · ASN · registro
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="bgp toolkit asn rutas"
+          >
+
+            <div>
+              <h3>
+                BGP Toolkit
+              </h3>
+
+              <p>
+                ASN · rutas · prefijos · looking glass
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="iana whois dominios ip"
+          >
+
+            <div>
+              <h3>
+                IANA WHOIS
+              </h3>
+
+              <p>
+                WHOIS · dominios · IP · ASN
+              </p>
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         ADMIN
+         =================================================== -->
+
+    <section
+      id="admin"
+      class="tab-panel"
+    >
+
+
+      <!-- ACCESOS -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          ACCESOS RÁPIDOS
+        </h2>
+
+
+        <div class="grid grid-3">
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="router administracion red"
+          >
+
+            <div>
+
+              <h3>
+                Router
+              </h3>
+
+              <p>
+                Administración del router
+              </p>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="portainer ip emergencia"
+          >
+
+            <div>
+
+              <h3>
+                Portainer por IP
+              </h3>
+
+              <p>
+                Acceso directo de emergencia
+              </p>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="immich tailscale acceso"
+          >
+
+            <div>
+
+              <h3>
+                Immich por Tailscale
+              </h3>
+
+              <p>
+                Acceso alternativo por red privada
+              </p>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ADMINISTRACION -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          ADMINISTRACIÓN
+        </h2>
+
+
+        <div class="grid grid-3">
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="github repositorio"
+          >
+
+            <div>
+
+              <h3>
+                GitHub
+              </h3>
+
+              <p>
+                Repositorio público del proyecto
+              </p>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="tailscale admin vpn"
+          >
+
+            <div>
+
+              <h3>
+                Tailscale Admin
+              </h3>
+
+              <p>
+                Gestión de dispositivos y red privada
+              </p>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="docker hub imagenes"
+          >
+
+            <div>
+
+              <h3>
+                Docker Hub
+              </h3>
+
+              <p>
+                Imágenes y registros Docker
+              </p>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- DOCUMENTACION -->
+
+      <section class="dashboard-section">
+
+        <h2>
+          DOCUMENTACIÓN
+        </h2>
+
+
+        <div class="grid grid-3">
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="homepage docs documentacion"
+          >
+
+            <div>
+
+              <h3>
+                Homepage Docs
+              </h3>
+
+              <p>
+                Documentación oficial de Homepage
+              </p>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="uptime kuma docs"
+          >
+
+            <div>
+
+              <h3>
+                Uptime Kuma Docs
+              </h3>
+
+              <p>
+                Documentación y proyecto Uptime Kuma
+              </p>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+
+          <article
+            class="card compact-card demo-action searchable"
+            data-search="immich docs documentacion"
+          >
+
+            <div>
+
+              <h3>
+                Immich Docs
+              </h3>
+
+              <p>
+                Documentación oficial de Immich
+              </p>
+
+            </div>
+
+            <span class="status-dot decorative"></span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       TOAST
+       ===================================================== -->
+
+  <aside
+    id="demo-toast"
+    class="demo-toast"
+    aria-live="polite"
+  >
+    Modo demo: esta tarjeta no accede a ningún servicio real.
+  </aside>
+
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="footer">
+
+    <span>
+      Vortex42 Control Center
+    </span>
+
+    <span>
+      Demo pública · datos simulados
+    </span>
+
+    <span>
+      v1.0.0-demo
+    </span>
+
+  </footer>
+
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

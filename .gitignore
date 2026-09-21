@@ -1,0 +1,30 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporales
+*.tmp
+*.bak
+*.log
+
+# Node / tooling futuro
+node_modules/
+dist/
+build/
+
+# Variables de entorno
+.env
+.env.*
+*.env
+
+# Claves / certificados
+*.key
+*.pem
+*.crt
+secrets/
