@@ -6,7 +6,7 @@ Esta versión fue creada específicamente para mostrar el proyecto sin exponer i
 
 ## Demo
 
-La demo será publicada mediante GitHub Pages.
+🔗 [Abrir Vortex42 Control Center Demo](https://nicolasrasse.github.io/vortex42-control-center-demo/)
 
 > Todos los estados, métricas, porcentajes y tiempos mostrados son datos simulados.
 
